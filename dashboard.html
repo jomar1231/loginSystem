@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="dashboard-shell">
+        <aside class="sidebar">
+            <div class="brand">MarketPulse</div>
+            <nav>
+                <a class="active" href="#">Dashboard</a>
+                <a href="#">Products</a>
+                <a href="#">Orders</a>
+                <a href="#">Customers</a>
+                <a href="#">Analytics</a>
+                <a href="#">Settings</a>
+            </nav>
+        </aside>
+
+        <main class="dashboard-main">
+            <header class="topbar">
+                <div class="topbar-left">
+                    <h1>Market Dashboard</h1>
+                    <p>Live marketplace insights for sales, stock and customer demand.</p>
+                </div>
+                <div class="topbar-actions">
+                    <div class="search-box">
+                        <input type="search" placeholder="Search products, orders or customers...">
+                    </div>
+                    <button class="cta-btn">Add New Listing</button>
+                </div>
+            </header>
+
+            <section class="stat-grid">
+                <div class="stat-card">
+                    <div class="label">Total Revenue</div>
+                    <div class="value">$98.4k</div>
+                    <div class="trend">+12.8% from last week</div>
+                </div>
+                <div class="stat-card">
+                    <div class="label">Orders Today</div>
+                    <div class="value">254</div>
+                    <div class="trend">+8.2% increase</div>
+                </div>
+                <div class="stat-card">
+                    <div class="label">Conversion Rate</div>
+                    <div class="value">4.6%</div>
+                    <div class="trend">Stable</div>
+                </div>
+                <div class="stat-card">
+                    <div class="label">Active Campaigns</div>
+                    <div class="value">7</div>
+                    <div class="trend">2 new campaigns</div>
+                </div>
+            </section>
+
+            <section class="market-grid">
+                <article class="chart-card">
+                    <h2>Revenue Trend</h2>
+                    <div class="summary">
+                        <div class="summary-item">
+                            <strong>$62.1k</strong>
+                            <span>Weekly revenue</span>
+                        </div>
+                        <div class="summary-item">
+                            <strong>18.4%</strong>
+                            <span>Repeat customers</span>
+                        </div>
+                        <div class="summary-item">
+                            <strong>342</strong>
+                            <span>New signups</span>
+                        </div>
+                    </div>
+                    <div class="chart-placeholder">
+                        <div class="bar" style="height: 38%;"></div>
+                        <div class="bar" style="height: 55%;"></div>
+                        <div class="bar" style="height: 72%;"></div>
+                        <div class="bar" style="height: 66%;"></div>
+                        <div class="bar" style="height: 83%;"></div>
+                        <div class="bar" style="height: 74%;"></div>
+                        <div class="bar" style="height: 92%;"></div>
+                    </div>
+                </article>
+
+                <article class="table-card">
+                    <h2>Top Products</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Sales</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Wireless Headphones</td>
+                                <td>1,240</td>
+                                <td><span class="status status-active">In Stock</span></td>
+                            </tr>
+                            <tr>
+                                <td>Smart Watch</td>
+                                <td>980</td>
+                                <td><span class="status status-active">In Stock</span></td>
+                            </tr>
+                            <tr>
+                                <td>Eco Sneakers</td>
+                                <td>735</td>
+                                <td><span class="status status-pending">Low Stock</span></td>
+                            </tr>
+                            <tr>
+                                <td>Travel Backpack</td>
+                                <td>610</td>
+                                <td><span class="status status-active">In Stock</span></td>
+                            </tr>
+                            <tr>
+                                <td>Portable Charger</td>
+                                <td>495</td>
+                                <td><span class="status status-low">Preorder</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

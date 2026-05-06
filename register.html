@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Login System</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="register-container">
+        <div class="register-header">
+            <h1>Create Account</h1>
+            <p>Join us today</p>
+        </div>
+
+        <div class="success-message" id="successMessage">
+            Registration successful! Redirecting...
+        </div>
+
+        <form id="registerForm">
+            <div class="form-group">
+                <label for="fullName">firstname</label>
+                <input 
+                    type="text" 
+                    id="firstname" 
+                    class="firstname" 
+                    placeholder="Enter your firstname"
+                    required
+                >
+                <div class="error-message" id="firstname">Name must be at least 3 characters</div>
+                <label for="lastname">lastname</label>
+                <input 
+                    type="text" 
+                    id="lastname" 
+                    class="lastname" 
+                    placeholder="Enter your lastname"
+                    required
+                >
+                <div class="error-message" id="fullName">Name must be at least 3 characters</div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    class="email" 
+                    placeholder="Enter your email"
+                    required
+                >
+                <div class="error-message" id="emailError">Please enter a valid email</div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input 
+                    type="password" 
+                    id="password" 
+                    class="password" 
+                    placeholder="Enter your password"
+                    required
+                >
+                <div class="error-message" id="passwordError">Password must be at least 6 characters</div>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input 
+                    type="password" 
+                    id="confirmPassword" 
+                    class="confirmPassword" 
+                    placeholder="Confirm your password"
+                    required
+                >
+                <div class="error-message" id="confirmPasswordError">Passwords do not match</div>
+            </div>
+
+            <div class="terms">
+                <input type="checkbox" id="termsCheckbox" required>
+                <label for="termsCheckbox">I agree to the terms and conditions</label>
+            </div>
+
+            <button type="submit" class="register-btn">Sign Up</button>
+        </form>
+
+        <div class="login-link">
+            Already have an account? <a href="login.html">Sign in here</a>
+        </div>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+</html>
