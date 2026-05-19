@@ -29,6 +29,7 @@ const register = async ( req, res)=>{
                 firstname,
                 lastname,
                 email,
+    
             }
             const token = generateToken(payload, res);
             res.status(200).json({
